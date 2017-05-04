@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.learninguserinputevents.MainActivity"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="Long Press Me!!!!"
+            android:textAlignment="center"
+            android:background="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/pinkLayout"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#FF8989"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Texto para arrastrar." />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Texto para arrastrar 2." />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/yellowLayout"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#FFCC00"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/intro" />
+
+            <TextView
+                android:id="@+id/option_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/options"
+                android:gravity="center"
+                android:text="@string/option_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/option_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/options"
+                android:gravity="center"
+                android:text="@string/option_2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/option_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/options"
+                android:gravity="center"
+                android:text="@string/option_3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/choice_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/choice"
+                android:gravity="center"
+                android:text="@string/choice_1" />
+
+            <TextView
+                android:id="@+id/choice_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/choice"
+                android:gravity="center"
+                android:text="@string/choice_2" />
+
+            <TextView
+                android:id="@+id/choice_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/choice"
+                android:gravity="center"
+                android:text="@string/choice_3" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
